@@ -8,9 +8,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-type Props = {}; 
-
-export default class Form extends Component<Props>{
+export default class Form extends Component<{}>{
 	render(){
 		return(
 			<View style={styles.container}>

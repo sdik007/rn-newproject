@@ -22,7 +22,7 @@ export default class Logo extends Component<Props>{
 
 const styles = StyleSheet.create({
 	container:{
-		flexGrow :1,
+		flexGrow :1, 
 		alignItems :'center',
 		justifyContent : 'flex-end',
 	},

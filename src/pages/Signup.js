@@ -3,8 +3,7 @@ import{
 	StyleSheet,
 	Text,
 	View,
-	StatusBar,
-	TouchableOpacity
+	StatusBar
 } from 'react-native';
 
 import Logo from '../components/Logo';

@@ -10,16 +10,22 @@ import {
 import Logo from '../components/Logo';
 import Form from '../components/Form';
 
-type Props = {};
-export default class Login extends Component<Props> {
+import {Actions} from 'react-native-router-flux';
+
+export default class Login extends Component<{}> {
+	signup(){
+		Actions.signup()
+	}
+
 	render(){
 		return( 
 			<View style={styles.container}>
 				<Logo/>
-				<Form type="Signup" />
+				<Form type="Login" />
 				<View style={styles.signupTextCont}>
-					<Text style={styles.signupText}>Alredy have an account </Text>
-					<Text style={styles.sugnupButton}>Sign in</Text>
+					<Text style={styles.signupText}>Don't have an account yet?</Text>
+					<TouchableOpacity onPress={this.signup}><Text style={styles.sugnupButton}>Sign in</Text></TouchableOpacity>
+					
 				</View>
 			</View>
 		);
@@ -49,5 +55,3 @@ const styles = StyleSheet.create({
 		fontWeight:'500'
 	}
 });
-
-
