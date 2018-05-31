@@ -3,12 +3,11 @@ import{
 	StyleSheet,
 	Text,
 	View,
-	StatusBar,
-	TouchableOpacity
+	StatusBar
 } from 'react-native';
 
-import Logo from './components/Logo';
-import Form from './components/Form';
+import Logo from '../components/Logo';
+import Form from '../components/Form';
 
 type Props = {};
 export default class Signup extends Component<Props>{

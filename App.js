@@ -2,19 +2,19 @@
 import React, { Component } from 'react';
 import {
   StyleSheet,
-  Text,
   View,
   StatusBar
 } from 'react-native';
 
 import Login from './src/pages/Login';
-
-type Props = {};
-export default class App extends Component<Props> {
+import Routes from './src/Routes';
+ 
+export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-          <Login/>
+          <StatusBar backgroundColor="#1c313a" barStyle="light-content"/>
+          <Routes/>
       </View>
     );
   }
@@ -23,9 +23,8 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     backgroundColor : '#455a64',
-    flex:1,
-    alignItems : 'center',
-    justifyContent :'center',
+    flex:1, 
+    justifyContent:'center',
   }
 
 });
