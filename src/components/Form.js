@@ -16,12 +16,16 @@ export default class Form extends Component<{}>{
 				underlineColorAndroid='rgba(0,0,0,0)' 
 				placeholder="Email" 
 				placeholderTextColor="#ffffff"
+				selectionColor="#fff"
+				keyboardType="email-address"
+				onSubmitEditing={()=>this.password.focus()}
 				/>
 				<TextInput style={styles.inputBox}  
 				underlineColorAndroid='rgba(0,0,0,0)' 
 				placeholder="Password" 
 				placeholderTextColor="#ffffff"
 				secureTextEntry={true}
+				ref={(input) => this.password = input}
 				/>
 				<TouchableOpacity style={styles.ButtonStyle}>
 					<Text style={styles.ButtonTextStyle}>{this.props.type}</Text>
